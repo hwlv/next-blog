@@ -1,0 +1,49 @@
+{
+  "name": "next-blog",
+  "version": "1.0.0",
+  "description": "nextjs+koa+mongodb => blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwlv/next-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hwlv/next-blog/issues"
+  },
+  "homepage": "https://github.com/hwlv/next-blog#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.15.2",
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "ioredis": "^4.9.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.1",
+    "next": "^8.0.3",
+    "nodemailer": "^6.2.1",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.2.0",
+    "winston": "^3.2.1"
+  }
+}
