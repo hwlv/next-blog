@@ -1,7 +1,7 @@
 {
-  "name": "next-blog",
+  "name": "koa-blog",
   "version": "1.0.0",
-  "description": "nextjs+koa+mongodb => blog",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,23 +9,16 @@
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hwlv/next-blog.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hwlv/next-blog/issues"
-  },
-  "homepage": "https://github.com/hwlv/next-blog#readme",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "antd": "^3.15.2",
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
     "babel-plugin-styled-components": "^1.10.0",
+    "chalk": "^2.4.2",
+    "chokidar": "^3.0.1",
     "cross-env": "^5.2.0",
     "dotenv": "^8.0.0",
     "ioredis": "^4.9.0",
@@ -33,6 +26,7 @@
     "koa-body": "^4.1.0",
     "koa-router": "^7.4.0",
     "koa-session": "^5.10.1",
+    "mockjs": "^1.0.1-beta3",
     "moment": "^2.24.0",
     "mongoose": "^5.6.1",
     "next": "^8.0.3",
@@ -45,5 +39,18 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.2.0",
     "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-standard": "^4.0.0"
   }
 }
