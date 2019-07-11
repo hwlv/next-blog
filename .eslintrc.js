@@ -27,7 +27,10 @@ module.exports = {
   },
 
   plugins: ["react"],
-  extends: "eslint:recommended",
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   // 启用的规则及其各自的错误级别
   rules: {
     // 箭头函数的空格使用规则
@@ -39,6 +42,9 @@ module.exports = {
     "semi": [0],
     // React组件
     "react/prop-types": [1],
+    // react 组件的名字displayName，方便debug off
+    "react/display-name": [0],
+    "react/react-in-jsx-scope": [0],
     // 防止在JSX中使用的变量被错误地标记为未使用
     "react/jsx-uses-vars": 2,
     "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
