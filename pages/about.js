@@ -1,6 +1,8 @@
-export default () => {
-   return (<div>
-      about
-    </div>
-   )
-}
+
+require('../config')
+
+export default () => (
+  <ul>
+    dd
+  </ul>
+)

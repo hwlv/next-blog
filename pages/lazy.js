@@ -1,9 +1,9 @@
 import React from "react";
 
 export default () => {
-    return( <div>
+  return (
+    <div>
             lazy.js
-        </div>
-
-    )
+    </div>
+  )
 }
