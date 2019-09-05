@@ -15,19 +15,20 @@ koa next blog
 
 #### 截图
 #### 主页
-![preview](./doc/img/主页.png)
+<img  src="./doc/img/主页.png" />
 
+![preview](https://github.com/hwlv/next-blog/raw/master/doc/img/主页.png)
 #### 详情页
-![preview](./doc/img/详情页.png)
+![preview](doc/screenshots/详情页.png)
 
 #### 文章管理
-![preview](./doc/img/文章管理.png)
+![preview](doc/screenshots/文章管理.png)
 
 #### 发文
-![preview](./doc/img/发文.png)
+![preview](doc/screenshots/发文.png)
 
 #### 标签管理
-![preview](./doc/img/标签管理.png)
+![preview](doc/screenshots/标签管理.png)
 
 
 ## 文档
