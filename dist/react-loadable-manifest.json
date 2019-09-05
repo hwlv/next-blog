@@ -1,0 +1,26 @@
+{
+  "../../app/components/AceEditor": [
+    {
+      "id": "./app/components/AceEditor/index.js",
+      "name": "./app/components/AceEditor/index.js",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "../../app/components/AdminLayout": [
+    {
+      "id": "./app/components/AdminLayout.js",
+      "name": "./app/components/AdminLayout.js",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    }
+  ],
+  "./noop": [
+    {
+      "id": "./node_modules/next/dist/client/noop.js",
+      "name": "./node_modules/next/dist/client/noop.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    }
+  ]
+}
