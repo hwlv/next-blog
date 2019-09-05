@@ -1,10 +1,10 @@
-<p align="center">
-<img src="./doc/img/logo.png" />
-<h1 align="center"> next-koa-blog </h1>
-</p>
 
 # koa-blog
 #### 环境
+
+## 使用
+>  npm i  
+   npm start
 
 #### 介绍
 koa next blog 
@@ -17,9 +17,7 @@ koa next blog
 [中文文档](https://nextjs.frontendx.cn/)  
 [github](https://github.com/zeit/next.js)  
 
-## 安装教程
->  npm i  
-   npm start
+
 
 ## next 相关知识点
 建议看官方的文档和demo。demo有100多种例子供参考。[examples](https://github.com/zeit/next.js/tree/7.0.0-canary.8/examples)。这里只是做一些补充。

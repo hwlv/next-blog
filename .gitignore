@@ -62,7 +62,7 @@ typings/
 
 # next.js build output
 .next
-/dist
+dist/*.*
 /dest
 
 # nuxt.js build output
