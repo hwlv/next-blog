@@ -62571,7 +62571,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!**************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fadmin%2FnewArticle&absolutePagePath=%2FUsers%2Fapple%2Fdev%2Fgithub%2Fnext-blog%2Fpages%2Fadmin%2FnewArticle.js ***!
   \**************************************************************************************************************************************************************/
@@ -62594,5 +62594,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=newArticle.js.map
