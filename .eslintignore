@@ -1,7 +1,4 @@
 .next
 out
-
-# components/*.js
-pages/_app.js
+dest
 pages/_document.js
-pages/index.js

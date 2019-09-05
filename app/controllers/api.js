@@ -1,25 +1,14 @@
-const axios = require('axios')
-const debug = require('debug')('server:github')
+const Router = require('koa-router')
+const router = new Router()
+const tagsRouter = require('./tags')
+const userRouter = require('./user')
+const articleRouter = require('./articles')
 
-const github_base_url = 'https://api.github.com'
+// 用户相关
+router.use('/user', userRouter.routes(), userRouter.allowedMethods())
+// 标签
+router.use('/tags', tagsRouter.routes(), tagsRouter.allowedMethods())
+// 文章
+router.use('/article', articleRouter.routes(), articleRouter.allowedMethods())
 
-module.exports = async function (path, token) {
-    const githubPath = `${github_base_url}${path.replace('/github/', '/')}`
-    const headers = {}
-    if (token) {
-      headers['Authorization'] = `token ${
-        token
-      }`
-    }
-    debug(`proxy to ${githubPath}, with headers:`, headers)
-    try {
-      const res = await axios({
-        method: 'GET',
-        url: githubPath,
-        headers,
-      })
-      return res
-    } catch (err) {
-      debug('proxy error:', err)
-    }
-}
+module.exports = router

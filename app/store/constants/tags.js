@@ -1,0 +1,6 @@
+export  const actionTypes = {
+  GET_ALL_TAGS: "GET_ALL_TAGS",
+  SET_TAGS: "RESPONSE_GET_ALL_TAGS",
+  DELETE_TAG: "DELETE_TAG",
+  ADD_TAG: "ADD_TAG"
+};

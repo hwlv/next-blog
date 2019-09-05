@@ -1,12 +1,22 @@
 {
-  "presets": ["next/babel"],
+  "presets": [
+    [
+      "next/babel",
+      {
+        "styled-jsx": {
+          "plugins": ["styled-jsx-plugin-less"]
+        }
+      }
+    ]
+  ],
   "plugins": [
     [
       "import",
       {
-        "libraryName": "antd"
+        "libraryName": "antd",
+        "style": "true"
       }
-    ],
-    ["styled-components", { "ssr": true }]
+    ]
   ]
 }
+
