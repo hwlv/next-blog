@@ -1,16 +1,34 @@
 
-# koa-blog
+
 #### 环境
+MongoDB, nodejs>8, webstorm > 2019.2
 
 ## 使用
->  npm i  
-   npm start
+
+    npm i  
+    
+    npm start
+
 
 #### 介绍
 koa next blog 
 
-#### 软件架构
-软件架构说明
+#### 截图
+#### 主页
+![preview](./doc/img/主页.png)
+
+#### 详情页
+![preview](./doc/img/详情页.png)
+
+#### 文章管理
+![preview](./doc/img/文章管理.png)
+
+#### 发文
+![preview](./doc/img/发文.png)
+
+#### 标签管理
+![preview](./doc/img/标签管理.png)
+
 
 ## 文档
 [next.js官网](https://nextjs.org/)  
@@ -59,16 +77,6 @@ getInitialProps只能存在于pages的页面中。它返回了对象数据并绑
 <img src="./doc/img/nextjs-response.png" />
 </p>
  
-## github OAuth 2.0授权。
-第三方授权现在比较流行的。比如像博客这种对登录权限要求不是特别严格的项目可以直接接入第三方授权，下面是接入github授权的流程。
-1. 添加授权App。[github profile](https://github.com/settings/profile)=>[Developer settings](https://github.com/settings/apps) => 点击 [New Github App](https://github.com/settings/apps/new)
-其中 GitHub App name 和 User authorization callback URL 比较重要。User authorization callback URL 就是完成授权后，github跳转的路径。
-2. 拿到Client ID 和 Client Secret 到项目中。这个时候可以访问https://github.com/login/oauth/authorize?client_id=(你的Client ID) 测试是否打开授权页面。如果授权成功页面会跳转到User authorization callback URL并
-附带参数code。
-3. 流程图。
-<p align="center">
-<img src="./doc/img/githubauth.png" />
-</p>
 
 ## 在nextjs项目中怎么使用css
 本项目使用的是styled-jsx。文档[styled-jsx](https://github.com/zeit/styled-jsx)。
@@ -115,11 +123,6 @@ vscode的vscode-styled-jsx插件。webstorm要在代码块上面加上 { /*langu
 
 文档：[Redux on the Server](https://redux.js.org/recipes/server-rendering)  
 
-## next.js中使用codemirror
-
-## hooks用法
-https://github.com/KieSun/Dream/issues/15
-
 
 ### next.js中使用antd
 参考官网demo配置，[with-ant-design](https://github.com/zeit/next.js/tree/canary/examples/with-ant-design)
@@ -132,10 +135,9 @@ https://gitalk.github.io/
 
 ### 编辑器
 
-选的是ace editor，然后发现有react封装好的，就直接用了。(在线体验)[http://securingsincity.github.io/react-ace/]
-参考[brace使用](https://juejin.im/post/5a425cce6fb9a045204c7c11)
+react-ace，(在线体验)[http://securingsincity.github.io/react-ace/]
 
-代码高亮：用highlight.js实现，样式参考[github](https://highlightjs.org/static/demo/styles/github.css)
+代码高亮：用highlight.js，样式参考[github](https://highlightjs.org/static/demo/styles/github.css)
 
 ### 部署
 1. 通过npm   

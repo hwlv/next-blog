@@ -3,10 +3,6 @@
     "static/development/dll/dll_aa8f31c0c93a8f34edc5.js"
   ],
   "pages": {
-    "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
@@ -17,14 +13,14 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/admin/newArticle": [
+    "/admin/managerArticle": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/detail": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-    "/index": [
-      "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
   }
