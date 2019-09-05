@@ -14,10 +14,10 @@ MongoDB, nodejs>8, webstorm > 2019.2
 koa next blog 
 
 #### 截图
-#### 主页
-<img  src="./doc/img/主页.png" />
 
-![preview](https://github.com/hwlv/next-blog/raw/master/doc/img/主页.png)
+#### 主页
+![preview](doc/screenshots/主页.png)
+
 #### 详情页
 ![preview](doc/screenshots/详情页.png)
 
