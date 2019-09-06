@@ -76,15 +76,13 @@ const configs = {
 //     },
 //
 // }
+
 // fix: prevents error when .css files are required by node
 if (typeof require !== 'undefined') {
     require.extensions['.css'] = file => {}
-}else{
-
 }
 
 module.exports = withCss({
-    distDir: 'dist',
     // cssModules: true,
     webpack(config) {
         const eslintRule = {
