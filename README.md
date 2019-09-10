@@ -148,11 +148,54 @@ react-ace，(在线体验)[http://securingsincity.github.io/react-ace/]
     
     npm start
 
-2. 通过pm2
+2. 通过pm2部署
 
-根目录下新建ecosystem.config.js 文件。    
+根目录下新建ecosystem.config.js 文件。  
 
-    npm2 start ecosystem.config.js
+```js
+module.exports = {
+  apps: [
+    {
+      name: 'next-blog',
+      script: './server.js',
+      instances: 1,
+      autorestart: true,
+      watch: true,
+      max_memmory_retart: '1G',
+      env: {
+        NODE_ENV: 'production'
+      }
+    }
+  ]
+}
+```  
+    
+    npm run build
+
+    pm2 start ecosystem.config.js
+
+3. nginx 代理
+
+进入Nginx配置文件目录：
+```js
+cd /etc/nginx/conf.d 
+ls
+vim default.conf
+```
+
+```editorconfig
+upstream blog {
+    server 127.0.0.1:5000;
+    keepalive 64;
+}
+server {
+    listen       80;
+    server_name www.lvhongwang.com;
+    location / {
+        proxy_pass http://blog;
+    }
+}
+```
 
 
 ### 其他
@@ -181,8 +224,3 @@ https://juejin.im/post/5d3c51ad6fb9a07ead5a42bf
 
 主页列表：https://www.gatsbyjs.org/blog/
 
-## 文章详情左侧导航菜单
-https://github.com/lxx2013/utils/blob/master/jianshu-index.js
-https://www.v2ex.com/amp/t/549551
-https://github.com/icanleric/other/blob/master/Typora%202%20Html%E5%B8%A6%E7%9B%AE%E5%BD%95.md
-https://github.com/vuejs/vuejs.org/blob/master/themes/vue/source/js/common.js
