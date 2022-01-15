@@ -34,7 +34,7 @@
     "koa-router": "^7.4.0",
     "koa-session": "^5.10.1",
     "less": "^3.9.0",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "moment": "^2.24.0",
     "mongoose": "^5.6.7",
     "next": "^9.3.2",
